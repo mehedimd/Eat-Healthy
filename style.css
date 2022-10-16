@@ -186,6 +186,9 @@ ul {
     padding: 50px;
 }
 
+
+
+/* Media queyris section */
 @media only screen and (max-width : 992px){
     .orderFood .image img{
         width: 200px;
