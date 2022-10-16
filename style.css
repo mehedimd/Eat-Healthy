@@ -213,7 +213,6 @@ ul {
         grid-template-columns: 1fr;
         grid-template-rows: 200px 220px;
         padding: 8px;
-        gap: 10px;
         justify-content: first baseline;
         
         
@@ -234,6 +233,9 @@ ul {
     .orderFood .content h1{
         font-size: 20px;
     }
+    .orderFood .content{
+        padding: 32px;
+    }
 
     /* aboutme section */
     
@@ -242,11 +244,13 @@ ul {
     }
     .aboutMe .content{
         grid-column: 1 / -1;
-        gap: 0;
-        padding: 16px;
+        padding: 32px;
+        
     }
     .aboutMe{
+        padding:  0px;
         height: 350px;
+
         
     }
 
@@ -254,6 +258,10 @@ ul {
     .myRecipes .items{
         grid-column: 1 / -1;
         margin-bottom: 24px;
+    }
+    .myRecipes .items .images{
+        width: 100%;
+        height: 200px;
     }
 
     /* social */
