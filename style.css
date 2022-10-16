@@ -14,10 +14,16 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 50px;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
   }
+
   
   li {
     float: left;
@@ -31,13 +37,14 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
+  li a:hover {
     background-color: tomato;
   }
+  .actived{
+    color: tomato;
+  }
+  
+
 
 /* order food section */
 
@@ -194,6 +201,10 @@ ul {
 }
 @media only screen and (max-width : 768px){
 
+    /* navigation section */
+    ul{
+        padding: 8px;
+    }
     /* // order food section */
     .orderFood{
         grid-template-columns: 1fr;
@@ -246,5 +257,15 @@ ul {
     .social{
         margin: 30px;
         padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 468px){
+    ul{
+      flex-direction: column;  
+    }
+    ul .menu{
+       display: flex;
+       flex-direction: column;
     }
 }
